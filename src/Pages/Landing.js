@@ -1,6 +1,5 @@
 
-
-//Home page can be for someone to log into to. 
+//Landing page for the website. Create a header bar for info, about, contact, etc.
 
 import {Link, useNavigate} from "react-router-dom"
 import { useState, useLayoutEffect } from "react";
@@ -20,25 +19,24 @@ import {createUserWithEmailAndPassword,
   onAuthStateChanged,
   signOut } from "firebase/auth";
 
-function Home() {
+function Landing() {
     let navigate = useNavigate();
 
     return(
         <div>
-            <h1>Home Page</h1>
+            <h1>Landing Page</h1>
 
             <div>
-                <Link to="/test">Firebase crud test</Link>
+                <Link to="/">Go to the home</Link>
             </div>
             
             <div>
                 <h4>Pages in Testing:</h4>
-                <Link to="/landing">Go to landing page</Link>
-
+                
             </div>
             
         </div>
     );
 }
 
-export default Home;
+export default Landing;

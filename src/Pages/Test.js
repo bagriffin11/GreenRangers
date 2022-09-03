@@ -1,4 +1,6 @@
-// This page is to test the Firebase's crud (create, read, update, delete)
+
+// This page is to test the Firebase's crud (create, read, update, delete). So far it works. 
+// Go to firestore database under build menu to view the tables etc. 
 
 import { useState, useEffect } from "react";
 import {Link, useNavigate} from "react-router-dom"
@@ -14,7 +16,7 @@ import {
 
  
 
-function UserForm() {
+function Test() {
   let navigate = useNavigate();
 
   //variables for the form
@@ -29,11 +31,12 @@ function UserForm() {
     navigate("/");
   };
 
-  
-
-
   return (
     <div className="App">
+        <div>
+             <h1>Test Page</h1>
+        </div>
+  
             
         <div>
         <input
@@ -68,4 +71,4 @@ function UserForm() {
   );
 }
 
-export default UserForm;
+export default Test;
