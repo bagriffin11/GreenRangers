@@ -1,7 +1,7 @@
 ﻿import React, { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import "./styles.scss";
-
+import HeaderDesk from "./Components/HeaderDesk";
 
 mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
 
@@ -9,7 +9,7 @@ mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
 const points = [];
 
 
-export default function App() {
+function Map() {
 
 	//const mapboxElRef = useRef(null);
 
@@ -95,9 +95,12 @@ export default function App() {
 
 	return (
 		<div className="App">
+		<HeaderDesk></HeaderDesk>
 			<div className="mapContainer">
 				<div className="mapBox" ref={map} />
 			</div>
 		</div>
 	);
 }
+
+export default Map;

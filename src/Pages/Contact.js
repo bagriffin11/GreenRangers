@@ -1,7 +1,3 @@
-
-
-//Home page can be for someone to log into to. 
-
 import {Link, useNavigate} from "react-router-dom"
 import { useState, useLayoutEffect } from "react";
 import { db, auth, provider } from "../firebase-config";
@@ -15,39 +11,27 @@ import {
   query,
   where
 } from "firebase/firestore";
-import "./home.scss"
 
 import {createUserWithEmailAndPassword,
   onAuthStateChanged,
   signOut } from "firebase/auth";
 import HeaderDesk from "./Components/HeaderDesk";
 
-
-function Home() {
+function Contact() {
     let navigate = useNavigate();
 
     return(
         <div>
-		<HeaderDesk></HeaderDesk>
-            <h1>Welcome to the Green Rangers EcoHacks 2022 Page</h1>
+			<HeaderDesk></HeaderDesk>
+            <h1>Contact Us</h1>
 
-            <div>
-                <Link to="/test">Firebase crud test</Link>
-            </div>
-            
             <div>
                 <h4>Pages in Testing:</h4>
-                <Link to="/landing">Go to landing page</Link>
-				<br></br>
-				
-
+                
             </div>
-			<div>
-				<Link to="/about">Go to about page
-				</Link>
-			</div>
+            
         </div>
     );
 }
 
-export default Home;
+export default Contact;
