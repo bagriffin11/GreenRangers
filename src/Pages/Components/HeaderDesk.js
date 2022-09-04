@@ -20,7 +20,7 @@ const HeaderDesk = () => {
   return (
         <div className="appnav">
 			<AppBar position="static" color="transparent">
-			<Tabs>
+			<Tabs >
 			<Tab label="Home" href="/"/>
 			<Tab label="Landing" href="/landing"/>
 			<Tab label="About" href="/about"/>

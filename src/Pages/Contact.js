@@ -16,6 +16,10 @@ import {createUserWithEmailAndPassword,
   onAuthStateChanged,
   signOut } from "firebase/auth";
 import HeaderDesk from "./Components/HeaderDesk";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import "./contact.scss";
 
 function Contact() {
     let navigate = useNavigate();
@@ -25,7 +29,14 @@ function Contact() {
 			<HeaderDesk></HeaderDesk>
             <h1>Contact Us</h1>
 
-            <div>
+            <div className="github-link">
+			<a href="https://github.com/bagriffin11/GreenRangers"> 
+	
+			<FontAwesomeIcon icon={faGithub}  /> 
+				
+			</a>
+			</div>
+			<div className="testing">
                 <h4>Pages in Testing:</h4>
                 
             </div>

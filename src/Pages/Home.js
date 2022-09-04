@@ -29,23 +29,21 @@ function Home() {
     return(
         <div>
 		<HeaderDesk></HeaderDesk>
-            <h1>Welcome to the Green Rangers EcoHacks 2022 Page</h1>
+            <h1>Welcome to the Green Rangers EcoHacks 2022 Site</h1>
 
-            <div>
+            <div className="firebase-link">
                 <Link to="/test">Firebase crud test</Link>
             </div>
             
-            <div>
+            <div className="pages">
                 <h4>Pages in Testing:</h4>
                 <Link to="/landing">Go to landing page</Link>
 				<br></br>
-				
-
-            </div>
-			<div>
 				<Link to="/about">Go to about page
 				</Link>
-			</div>
+
+            </div>
+			
         </div>
     );
 }

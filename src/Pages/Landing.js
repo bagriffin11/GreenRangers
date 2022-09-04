@@ -36,7 +36,7 @@ function Landing() {
             <h1>Urban Hotspot Map</h1>
 			
 			<div>
-			<p class="message" id="intro"> An interactive map of major cities showing areas with major heat disparities. This data can be used to suggest places where more trees can be planted to help grow the urban tree canopy and reduce carbon levels.
+			<p class="message" id="intro"> An interactive map of major cities showing areas with major heat disparities. This data can be used to suggest places where more trees can be planted to help grow the urban tree canopy and reduce carbon levels. Weather data is retrieved from OpenWeather API. 
 			</p>
 			</div>
 			<div className="btncontainer">

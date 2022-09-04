@@ -15,7 +15,7 @@ import {createUserWithEmailAndPassword,
   onAuthStateChanged,
   signOut } from "firebase/auth";
 import HeaderDesk from "./Components/HeaderDesk";
-
+import "./about.scss";
 
 function About() {
     let navigate = useNavigate();
@@ -27,8 +27,10 @@ function About() {
 		
             <h1>Our Team</h1>
 
-           
-            
+			<h2> Barret Griffin </h2>
+			<h2> Siddhartha Mahajan </h2>
+			<h2> Mahika Patil </h2>
+            <h2> Jenny Zhong </h2>
 			 
 			
             

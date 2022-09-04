@@ -79,7 +79,7 @@ function Map() {
 		// Mapbox functionality goes here
 		new mapboxgl.Map({
 			container: map.current,
-			style: "mapbox://styles/jenzhng/cl7mmtdsb006m14odmqlgj4fw/draft",
+			style: "mapbox://styles/jenzhng/cl7mmtdsb006m14odmqlgj4fw",
 			center: [-90, 20], // initial geo location
 			zoom: 2 // initial zoom
 		});
