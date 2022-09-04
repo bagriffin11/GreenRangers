@@ -5,11 +5,6 @@ import "./styles.scss";
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiamVuemhuZyIsImEiOiJjbDdsNW0yNTMwaDNvM29wMzg4OXJxcHE2In0.6FaSGStLdeW5Zc1_w_1PsQ';
 
-const startingLatitude = -80;
-const startingLongitude = -180;
-const endingLatitude = 80;
-const endingLongitude = 180;
-const n = 10;                   // n² is the number of points
 
 const points = [];
 
