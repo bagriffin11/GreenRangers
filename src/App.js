@@ -11,6 +11,8 @@ import Landing from './Pages/Landing'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Map from './Pages/Map'
+import Search from './Pages/Search'
+
 function App() {
 
   return (
@@ -22,6 +24,8 @@ function App() {
 		<Route path="/about" element={<About /> } />
 		<Route path="/contact" element={<Contact /> } />
 		<Route path="/map" element={<Map /> } />
+    <Route path="/search" element={<Search /> } />
+
       </Routes>
     </Router>
   );

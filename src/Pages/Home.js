@@ -41,6 +41,8 @@ function Home() {
 				<br></br>
 				<Link to="/about">Go to about page
 				</Link>
+                <br></br>
+                <Link to="/search">Search</Link>
 
             </div>
 			

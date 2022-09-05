@@ -1,5 +1,5 @@
 import {Link, useNavigate} from "react-router-dom"
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect, useEffect } from "react";
 import { db, auth, provider } from "../firebase-config";
 import {
   collection,
@@ -19,6 +19,9 @@ import "./about.scss";
 
 function About() {
     let navigate = useNavigate();
+
+
+  
 
     return(
         <div>
