@@ -11,7 +11,7 @@ const points = [];
 
 function Map() {
 
-	//const mapboxElRef = useRef(null);
+	// const mapboxElRef = useRef(null);
 
 	const map = useRef(null);
 
