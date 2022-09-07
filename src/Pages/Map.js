@@ -2,9 +2,8 @@
 import mapboxgl from "mapbox-gl";
 import "./styles.scss";
 import HeaderDesk from "./Components/HeaderDesk";
-
-mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
-
+import Search from './Search'
+mapboxgl.accessToken = 'pk.eyJ1IjoiamVuemhuZyIsImEiOiJjbDdsNW0yNTMwaDNvM29wMzg4OXJxcHE2In0.6FaSGStLdeW5Zc1_w_1PsQ';
 
 const points = [];
 
@@ -96,9 +95,13 @@ function Map() {
 	return (
 		<div className="App">
 		<HeaderDesk></HeaderDesk>
-			<div className="mapContainer">
+		<div></div>
+			
 				<div className="mapBox" ref={map} />
+			<div className = "center-col">
+							<Search />
 			</div>
+
 		</div>
 	);
 }

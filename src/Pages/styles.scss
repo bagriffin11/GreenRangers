@@ -19,9 +19,12 @@ body {
 .mapBox
  {
   width: 100%;
-  height: 100%;
+  height: 70%;
 }
-
+.center-col {
+  flex: 1;
+  overflow-y: scroll;
+}
 .mapboxgl-popup {
   font-family: "Baloo Thambi 2", cursive;
   font-size: 10px;

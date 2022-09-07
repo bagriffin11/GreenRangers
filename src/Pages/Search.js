@@ -103,7 +103,7 @@ function Search() {
 
     return(
         <div>
-		<HeaderDesk></HeaderDesk>
+		
             <h1>Search Page</h1>
             
             <div className="pages">
